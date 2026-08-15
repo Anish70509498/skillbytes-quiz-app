@@ -5,7 +5,7 @@ const API_URL =
 
 async function request(endpoint, options = {}) {
   const response = await fetch(
-    `${API_URL}${endpoint}`,
+    `${API_URL}/api${endpoint}`,
     {
       ...options,
       headers: {
